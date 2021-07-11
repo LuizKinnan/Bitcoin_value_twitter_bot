@@ -1,12 +1,12 @@
 import publisher
 import time
 
-key = '[YOUR API KEY]'
-secret_key = '[YOUR SECRET API KEY]'
-token = '[YOUR TOKEN]'
-secret_token = '[YOUR SECRET TOKEN]'
+api_key = ''
+api_secret_key = ''
+access_token = ''
+access_secret = ''
 
-api = poster.login(key, secret_key, token, secret_token)
+api = publisher.auth(api_key, api_secret_key, access_token, access_secret)
 while True:
-    poster.post(api)
+    publisher.post(api)
     time.sleep(600)

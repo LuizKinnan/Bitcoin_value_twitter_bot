@@ -6,8 +6,6 @@ def auth(api_key, api_secret_key, access_token, access_secret):
     
     return api
 
-    return api
-
 def post(api):
     
     result = req.consult()
